@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.borshan.tracker.MainActivity"
+    android:background = "@drawable/sign_up"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+
+        android:text="docuTracker"
+        android:textColor="#ffffffff"
+        android:textSize="30dp" />
+
+
+    <Button
+        android:id="@+id/signup_option_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_option_signin"
+        android:layout_alignLeft="@+id/signup_option_facebook"
+        android:layout_alignStart="@+id/signup_option_facebook"
+        android:layout_marginBottom="18dp"
+        android:alpha="0.60"
+        android:background="@drawable/roundedbutton"
+        android:text="Sign up using email"
+        android:textAllCaps="false"
+        android:textColor="#E8E4E4"
+        android:textSize="16sp"></Button>
+
+    <Button
+        android:id="@+id/signup_option_facebook"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="159dp"
+        android:alpha="0.60"
+        android:background="@drawable/roundedbutton"
+        android:text="Sign up using facebook"
+        android:textAllCaps="false"
+        android:textColor="#E8E4E4"
+        android:textSize="16sp"></Button>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.0"
+        android:layout_marginBottom="238dp" />
+
+
+    <TextView
+        android:id="@+id/signup_option_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/title"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/title"
+        android:layout_marginBottom="52dp"
+        android:linksClickable="true"
+        android:text="Already have an account!!!"
+        android:textColor="#E8E4E4" />
+
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:textColor="#E8E4E4" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:textColor="#E8E4E4" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#E8E4E4" />
+
+
+</RelativeLayout>

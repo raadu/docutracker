@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.borshan.tracker.MainActivity"
+    android:background = "@drawable/sign_up"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+
+        android:text="docuTracker"
+        android:textColor="#ffffffff"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="username "
+        android:inputType="textPassword"
+        android:textColor="#8D8D8D"
+        android:textColorHint="#8D8D8D"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="email "
+        android:inputType="textEmailAddress"
+        android:textColor="#8D8D8D"
+        android:textColorHint="#8D8D8D"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="password "
+        android:inputType="textPassword"
+        android:textColor="#8D8D8D"
+        android:textColorHint="#8D8D8D"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/signup_confirmpassword"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="confirm password "
+        android:inputType="textPassword"
+        android:textColor="#8D8D8D"
+        android:textColorHint="#8D8D8D"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:alpha="0.60"
+        android:background="@drawable/roundedbutton"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#E8E4E4"
+        android:textSize="25sp"></Button>
+
+    <TextView
+        android:id="@+id/signup_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Already have an account!!!"
+        android:textColor="#E8E4E4"
+        android:linksClickable="true"/>
+
+
+</RelativeLayout>
